@@ -4,6 +4,9 @@ Este proyecto es una recopilación de diversas herramientas de ciberseguridad un
 * WebScraping
 * Investigacion con shodan 
 * Escaneo de puertos con nmap
+* Extracción de metadata
+* Cifrado
+* Envío de correos
 
 ## Comenzando 🚀
 _Este script funciona mediante argumentos, solo ciertos script requieren de la interacción del usuario, a continuacion se muestra cómo lo puedes obtener_
@@ -25,7 +28,7 @@ pip install shodan
 
 
 ### Instalacion 🔧
-_Para una instalacion en Linux solamente se debe clonar el repositorio de la siguiente manera_
+_Para una instalación en Linux solamente se debe clonar el repositorio de la siguiente manera_
 ```
 $ git clone https://github.com/MrGh057/PIA_PC
 ```
@@ -33,5 +36,5 @@ $ git clone https://github.com/MrGh057/PIA_PC
 _Para Windows_
 ```
 * Click en la sección Code (botón verde).
-* Downloads ZIP
+* Download ZIP
 ```
