@@ -73,3 +73,8 @@ _Se utilizaron las siguientes documentaciones_
 * [smptlib](https://docs.python.org/3/library/smtplib.html)
 * [ssl](https://docs.python.org/3/library/ssl.html)
 * [subprocess](https://docs.python.org/3/library/subprocess.html)
+
+## Autores ✒️
+* **José Gerardo ME** - [MrGh057](https://github.com/MrGh057)
+* **Jelmy Gerardo LG** - [JelmyLG](https://github.com/JelmyLG)
+* **Diego Ibarra** - [DikerZarc40](https://github.com/DikerZarc40)
