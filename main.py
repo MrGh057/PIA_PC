@@ -6,6 +6,7 @@ import WebScraping
 import Investigacion
 import CifradoPIA
 import MandarCorreo
+import Metadata
 
 parser = argparse.ArgumentParser()
 
@@ -28,6 +29,7 @@ parser.add_argument("-Cl", "--clave", help="Palabra clave.")
 
 # Argumentos para Metadatos
 parser.add_argument("-oM", "--obtMetadatos", help="Obtención de meta datos", action="store_true")
+parser.add_argument("-r", "--ruta", help="La ruta absoluta de donde se obtendra la metadata")
 
 #Argumentos para Envio de correos
 parser.add_argument("-e", "--enviar_correo", help="Envio de correos", action="store_true")
@@ -80,6 +82,8 @@ elif parser.cifrado:
 #Obtener metadatos
 elif parser.obtMetadatos:
     print("[+] Se escogío obtencion de metadatos\n")
+    try:
+        
     
 #Mandar correos
 elif parser.enviar_correo:
