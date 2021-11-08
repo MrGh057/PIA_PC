@@ -8,7 +8,7 @@ import CifradoPIA
 import MandarCorreo
 import Metadata
 
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(description='Argumentos para la herramienta de busqueda')
 
 # Argumentos para WebScrapping
 parser.add_argument("-wS","--webScraping", help="Iniciar webscraping.", action="store_true")
