@@ -77,13 +77,17 @@ elif parser.portScan:
 elif parser.cifrado:
     print("[+] Se escogió cifrado de archivos.\n")
     # Aquí va el script de cifrado de archivos.
-    CifradoPIA.CifradoF(parser.correo, parser.clave)
- 
+    try:
+        CifradoPIA.CifradoF(parser.correo, parser.clave)
+    except:
+        print("\n\t [¡!] Algo salió mal")
 #Obtener metadatos
 elif parser.obtMetadatos:
     print("[+] Se escogío obtencion de metadatos\n")
     try:
-        
+        Metadata.printmeta(parser.ruta)
+    except:
+        print("\n\t [¡!] Algo salió mal")
     
 #Mandar correos
 elif parser.enviar_correo:
