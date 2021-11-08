@@ -38,8 +38,7 @@ def get_exif_metadata(image_path):
     decode_gps_info(ret)
     return ret
     
-def printmeta():
-    ruta = input("Ruta de imágenes: ")
+def printmeta(ruta):
     os.chdir(ruta)
     for root, dirs, files in os.walk(".", topdown=False):
         for name in files:
@@ -60,6 +59,3 @@ def printmeta():
             except:
                 import sys, traceback
                 traceback.print_exc(file=sys.stdout)
-printmeta()
-
-
