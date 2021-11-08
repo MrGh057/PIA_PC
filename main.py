@@ -73,6 +73,8 @@ elif parser.cifrado:
     
     # Aquí va el script de cifrado de archivos.
     CifradoF(parser.correo,parser.Clave)
+
+# Metadatos
 elif parser.obtMetadatos:
     print("[+] Se escogío obtencion de metadatos\n")
     
