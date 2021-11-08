@@ -73,6 +73,14 @@ elif parser.cifrado:
     print("[+] Se escogió cifrado de archivos.\n")
     # Aquí va el script de cifrado de archivos.
     CifradoPIA.CifradoF(parser.correo, parser.clave)
+ 
+#Obtener metadatos
 elif parser.obtMetadatos:
     print("[+] Se escogío obtencion de metadatos\n")
+    
+ #Mandar correos
+elif parser.enviar_correo:
+    print("[+] Se escogió Envio de correos.\n")
+    #Aquí va el script de Envio de correos.
+    Mandar Correo.Envio_Correo()
     
