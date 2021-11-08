@@ -38,28 +38,28 @@ def get_exif_metadata(image_path):
     decode_gps_info(ret)
     return ret
     
-
-ruta = input("Ruta de imágenes: ")
-os.chdir(ruta)
-for root, dirs, files in os.walk(".", topdown=False):
-    for name in files:
-        print(os.path.join(root, name))
-        print ("[+] Metadata for file: %s " %(name))
-        with open('metadata para imagenes.txt', 'a') as wt:
-            wt.write("\n [+] Metadata for files: %s" %(name))
-            print("\n")
-        input()
-        try:
-            exifData = {}
-            exif = get_exif_metadata(name)
-            for metadata in exif:
-                print ("Metadata: %s - Value: %s " %(metadata, exif[metadata]))
-                with open('metadata para imagenes.txt', 'a') as wt:
-                    wt.write("\n Metadata: %s - Value: %s " %(metadata, exif[metadata]))
-            print ("\n")
-        except:
-            import sys, traceback
-            traceback.print_exc(file=sys.stdout)
-
+def printmeta():
+    ruta = input("Ruta de imágenes: ")
+    os.chdir(ruta)
+    for root, dirs, files in os.walk(".", topdown=False):
+        for name in files:
+            print(os.path.join(root, name))
+            print ("[+] Metadata for file: %s " %(name))
+            with open('metadata para imagenes.txt', 'a') as wt:
+                wt.write("\n [+] Metadata for files: %s" %(name))
+                print("\n")
+            input()
+            try:
+                exifData = {}
+                exif = get_exif_metadata(name)
+                for metadata in exif:
+                    print ("Metadata: %s - Value: %s " %(metadata, exif[metadata]))
+                    with open('metadata para imagenes.txt', 'a') as wt:
+                        wt.write("\n Metadata: %s - Value: %s " %(metadata, exif[metadata]))
+                print ("\n")
+            except:
+                import sys, traceback
+                traceback.print_exc(file=sys.stdout)
+printmeta()
 
 
