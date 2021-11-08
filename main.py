@@ -34,8 +34,6 @@ parser.add_argument("-r", "--ruta", help="La ruta absoluta de donde se obtendra 
 #Argumentos para Envio de correos
 parser.add_argument("-e", "--enviar_correo", help="Envio de correos", action="store_true")
 
-parser.add_argument("-a", "--all", help="Ejecución de todas las funciones", action="store_true")
-
 parser = parser.parse_args()
 
 
