@@ -56,12 +56,16 @@ $ python main.py -pS -i 127.0.0.1
 
 _Herramienta de cifrado._
 ```
-$ python main.py -c
+$ python main.py -c -Co correo -Cl Clave
 ```
 
 _Herramienta metadatos_
 ```
-$ python main.py -oM
+$ python main.py -oM -r C:/users/Panchito/Desktop/imagenes/
+```
+_Envío de correos_
+```
+$ python main.py -e
 ```
 
 
@@ -78,3 +82,5 @@ _Se utilizaron las siguientes documentaciones_
 * **José Gerardo ME** - [MrGh057](https://github.com/MrGh057)
 * **Jelmy Gerardo LG** - [JelmyLG](https://github.com/JelmyLG)
 * **Diego Ibarra** - [DikerZarc40](https://github.com/DikerZarc40)
+* **Diego Alexander** - [LicPlatano](https://github.com/LicPlatano)
+* **Erick Cruz** - [VirtualCryst](https://github.com/VirtualCryst)
