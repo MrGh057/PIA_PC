@@ -5,7 +5,7 @@ import argparse
 import WebScraping
 import Investigacion
 import CifradoPIA
-import Mandar Correo
+import MandarCorreo
 
 parser = argparse.ArgumentParser()
 
@@ -78,9 +78,9 @@ elif parser.cifrado:
 elif parser.obtMetadatos:
     print("[+] Se escogío obtencion de metadatos\n")
     
- #Mandar correos
+#Mandar correos
 elif parser.enviar_correo:
     print("[+] Se escogió Envio de correos.\n")
     #Aquí va el script de Envio de correos.
-    Mandar Correo.Envio_Correo()
+    MandarCorreo.Envio_Correo()
     
