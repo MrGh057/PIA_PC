@@ -4,6 +4,7 @@ import subprocess
 import argparse
 import WebScraping
 import Investigacion
+import CifradoPIA
 
 parser = argparse.ArgumentParser()
 
@@ -22,6 +23,7 @@ parser.add_argument("-i", "--ip", help="IP objetivo a escanear.")
 # Argumentos para cifrado
 parser.add_argument("-c","--cifrado", help="Cifrado de archivo.", action="store_true")
 parser.add_argument("-Co", "--correo", help="Correo para cifrar.")
+parser.add_argument("-Cl", "--Clave", help="Palabra clave.")
 
 # Argumentos para Metadatos
 parser.add_argument("-oM", "--obtMetadatos", help="Obtención de meta datos", action="store_true")
@@ -68,8 +70,9 @@ elif parser.portScan:
 # Cifrado de 
 elif parser.cifrado:
     print("[+] Se escogió cifrado de archivos.\n")
+    
     # Aquí va el script de cifrado de archivos.
-    correo = parser.correo
+    CifradoF(parser.correo,parser.Clave)
 elif parser.obtMetadatos:
     print("[+] Se escogío obtencion de metadatos\n")
     
