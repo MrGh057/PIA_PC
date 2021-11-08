@@ -62,8 +62,6 @@ def decryptMessage(key, message):
     return ''.join(plaintext)
 
 def CifradoF(C, CL):
-    C = input('[!] Ingrese el correo: ')
-    CL = input('[!] Ingresa tu palabra clave para cifrar: ')
     correocry = encrypt(correocryp=C, clave=CL)
     print ("[+] Correo encriptado: " + correocry)
     while True:
