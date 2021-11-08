@@ -61,15 +61,14 @@ def decryptMessage(key, message):
 
     return ''.join(plaintext)
 
-if __name__ == '__main__':
-    correocryp = input('Ingrese el correo: ')
-    clave = input('Ingresa tu palabra clave para cifrar: ')
-    correocry = encrypt(correocryp=correocryp, clave=clave)
-    print ("Correo encriptado: " + correocry)
-
+def CifradoF(C, CL):
+    C = input('[!] Ingrese el correo: ')
+    CL = input('[!] Ingresa tu palabra clave para cifrar: ')
+    correocry = encrypt(correocryp=C, clave=CL)
+    print ("[+] Correo encriptado: " + correocry)
     while True:
-        des = input("Desencriptar correo: S | N  ")
-        if des == "S":
+        des = input("[!] Desencriptar correo: S | N  ")
+        if des ==  "S":
             descryp(correodes=correocry, clave=clave)
         elif des == "N":
             break
